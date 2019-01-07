@@ -2,6 +2,8 @@
 
 {% load humanize %}
 
+{% block title %} | {{ listing.title }}  {% endblock %}
+
 {%  block content %}
 
 <section id="showcase-inner" class="py-5 text-white">
@@ -138,7 +140,7 @@
           <!-- Description -->
           <div class="row mb-5">
             <div class="col-md-12">
-                    {{ listing.decsription }}
+                    {{ listing.description }}hello
             </div>
           </div>
         </div>
@@ -196,4 +198,4 @@
     </div>
   </div>
 
-{% endblock %}
+  {% endblock %}

@@ -2,6 +2,8 @@
 
 {% load humanize %}
 
+{% block title %} | Browse Property Listings {% endblock %}
+
 {% block content %}
 
 <section id="showcase-inner" class="py-5 text-white">
@@ -59,9 +61,9 @@
                       </div>
                       <div class="row py-2 text-secondary">
                         <div class="col-6">
-                          <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedroom }}</div>
+                          <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms }}</div>
                         <div class="col-6">
-                          <i class="fas fa-bath"></i> Bathrooms: {{ listing.bathroom }}</div>
+                          <i class="fas fa-bath"></i> Bathrooms: {{ listing.bathrooms }}</div>
                       </div>
                       <hr>
                       <div class="row py-2 text-secondary">
